@@ -1,8 +1,12 @@
-# React + Vite
+## Real time chat
+Build a simple chat applications using raw websockets in Node.js that supports the following features - 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+ - Allow an admin to create a new chat session/room. Admin should be allowed to set the following properties on the room - 
+  - Name
+  - start_time
+  - is_open 
+  - cool_down_time
+ - Allow a users to join the room and send messages
+ - Allow users to upvote chat messages.
+ - If chat messages reach more than 3 upvotes, move them over to a saparate section.
+ - If chat messages reach more than 10 upvotes, alert the admin to answer.
